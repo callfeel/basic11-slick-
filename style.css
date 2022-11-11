@@ -1,0 +1,283 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clear:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background-color: #000;
+}
+
+.전체 {
+    width: 1000px;
+    background-color: rgb(9, 102, 6);
+    margin: auto;
+    padding-top: 50px;
+}
+
+.전체 .첫째 {
+    color: rgb(255, 240, 25);
+    position: relative;
+}
+
+.전체 .첫째 .icon {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    z-index: 100;
+}
+
+.전체 .첫째 .제목 {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px 30px;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+.전체 .첫째 .slick-prev {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    visibility: hidden;
+    font-size: 0;
+
+
+}
+
+.전체 .첫째 .slick-prev:after {
+    content: "\f104";
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    visibility: visible;
+    font-size: 30px;
+    color: aliceblue;
+
+}
+
+.전체 .첫째 .slick-next {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    visibility: hidden;
+    font-size: 0;
+
+}
+
+.전체 .첫째 .slick-next::after {
+    content: "\f105";
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    visibility: visible;
+    font-size: 30px;
+    color: aliceblue;
+
+}
+
+.전체 .둘째 {
+    background-color: rgb(145, 35, 35);
+    padding: 10px;
+}
+
+.전체 .둘째 .둘자손 {
+    float: left;
+    width: 23.5%;
+    height: 300px;
+    margin-right: 2%;
+
+}
+
+.전체 .둘째 .둘자식1 {
+    background-color: rgb(138, 17, 108);
+}
+
+.전체 .둘째 .둘자식2 {
+    background-color: rgb(52, 187, 34);
+}
+
+.전체 .둘째 .둘자식3 {
+    background-color: rgb(51, 167, 235);
+}
+
+.전체 .둘째 .둘자식4 {
+    background-color: rgb(236, 13, 151);
+    margin-right: 0;
+    box-sizing: border-box;
+}
+
+.전체 .둘째 .둘자식4 .slick-track {
+    height: 300px;
+}
+
+.slickwrap {
+    height: 445px;
+    overflow: hidden;
+}
+
+.slickwrap .slick-prev {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+
+.slickwrap .slick-next {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+
+.전체 .둘째 .둘자식4 .slick-dots {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+
+}
+
+.전체 .둘째 .둘자식4 .slick-dots li {
+    display: inline;
+    margin: 0 5px;
+}
+
+
+.전체 .셋째 {
+    background-color: rgb(71, 224, 71);
+    padding: 20px;
+    line-height: 200px;
+    text-align: center;
+}
+
+.전체 .셋째 .셋째영역 {
+    background-color: rgb(248, 252, 45);
+    padding: 20px;
+    width: 900px;
+    box-sizing: border-box;
+    margin: auto;
+    border: 2px solid red;
+    /* border: 두께 스타일 칼라 */
+}
+
+.전체 .셋째 .셋자손 {
+    height: 200px;
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+}
+
+.전체 .셋째 .셋자식1 {
+    background-color: rgb(53, 187, 240);
+}
+
+.전체 .셋째 .셋자식2 {
+    background-color: rgb(170, 0, 0);
+}
+
+.전체 .셋째 .셋자식3 {
+    background-color: rgb(163, 5, 142);
+    margin-right: 0;
+}
+
+.전체 .넷째 {
+    background-color: rgb(64, 255, 121);
+    width: 900px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 30px;
+    line-height: 200px;
+    text-align: center;
+    box-sizing: border-box;
+
+}
+
+.전체 .넷째 .넷자손 {
+    background-color: rgb(142, 199, 245);
+    float: left;
+    width: 23.5%;
+    height: 200px;
+    margin-right: 2%;
+}
+
+.전체 .넷째 .넷자식1 {}
+
+.전체 .넷째 .넷자식2 {}
+
+.전체 .넷째 .넷자식3 {}
+
+.전체 .넷째 .넷자식4 {
+    margin-right: 0;
+}
+
+.전체 .다째 {
+    background-color: rgb(252, 182, 77);
+    width: 900px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 200px;
+    box-sizing: border-box;
+
+
+}
+
+.전체 .다째 .닷자손 {
+    background-color: rgb(255, 166, 0);
+    float: left;
+    height: 200px;
+    width: 45%;
+    margin-right: 10%;
+}
+
+.전체 .다째 .다째1 {}
+
+.전체 .다째 .다째2 {
+    margin-right: 0;
+}
+
+.전체 .여섯 {
+    background-color: rgb(56, 231, 144);
+    width: 900px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.전체 .여섯 .여손자 {
+    background-color: rgb(255, 172, 172);
+    height: 200px;
+    width: 18.4%;
+    float: left;
+    margin-right: 2%;
+    
+}
+
+.전체 .여섯 .여손자.여손자1 {}
+
+.전체 .여섯 .여손자.여손자2 {}
+
+.전체 .여섯 .여손자.여손자3 {}
+
+.전체 .여섯 .여손자.여손자4 {}
+
+.전체 .여섯 .여손자.여손자5 {margin-right: 0;}
